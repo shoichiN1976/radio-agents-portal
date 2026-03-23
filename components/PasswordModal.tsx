@@ -53,7 +53,7 @@ export default function PasswordModal({ agent, onSuccess, onClose }: Props) {
       onClick={onClose}
     >
       <div
-        className="w-full max-w-md rounded-xl border border-white/10 bg-[#1e1e2e] p-8 shadow-2xl"
+        className="w-full max-w-md rounded-2xl border border-purple-500/20 bg-[#1e1e2e] p-8 shadow-[0_0_60px_rgba(124,58,237,0.2)]"
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="mb-1 text-xl font-bold text-[#e2e8f0]">
