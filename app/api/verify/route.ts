@@ -5,6 +5,8 @@ const passwords: Record<string, string> = {
   "kawada-chiyume": process.env.PASSWORD_KAWADA ?? "1976",
   "sean-kawakami": process.env.PASSWORD_SEAN ?? "0321",
   "shiga-naoya": process.env.PASSWORD_SHIGA ?? "1915",
+  "ai-edison": process.env.PASSWORD_EDISON ?? "1847",
+  "ai-nishimura": process.env.PASSWORD_NISHIMURA ?? "1948",
 };
 
 export async function POST(request: NextRequest) {
