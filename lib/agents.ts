@@ -58,4 +58,16 @@ export const agents: Agent[] = [
     imageGradient: "linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%)",
     imageAspect: "medium",
   },
+  {
+    id: "ai-nishimura",
+    name: "AI西村光久",
+    description:
+      "西村光久のAIクローン。本人の知識と人柄を再現したAIエージェント。",
+    persona: "AI Clone",
+    originalPerson: "西村光久",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_0301kmfar0m4e6trays5ra2mca1s&branch_id=agtbrch_0001kmfar2h7eryv0tvxzpjv9nfd",
+    tags: ["AIクローン"],
+    imageGradient: "linear-gradient(135deg, #0891b2 0%, #06b6d4 50%, #22d3ee 100%)",
+    imageAspect: "tall",
+  },
 ];
