@@ -70,4 +70,16 @@ export const agents: Agent[] = [
     imageGradient: "linear-gradient(135deg, #0891b2 0%, #06b6d4 50%, #22d3ee 100%)",
     imageAspect: "tall",
   },
+  {
+    id: "ai-seishonagon",
+    name: "AI清少納言",
+    description:
+      "平安時代の才女・清少納言のAI。『枕草子』の著者が、鋭い観察眼と機知に富んだ言葉で語りかける。",
+    persona: "AI Legend",
+    originalPerson: "清少納言",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_5901kqgrrnkze9tby6x0sc94zy7j&branch_id=agtbrch_0001kqgrrqaqehqbt9pdcm71s9vy",
+    tags: ["文学", "平安時代", "歴史"],
+    imageGradient: "linear-gradient(135deg, #be185d 0%, #ec4899 50%, #f9a8d4 100%)",
+    imageAspect: "medium",
+  },
 ];
