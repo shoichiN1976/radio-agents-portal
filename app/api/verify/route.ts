@@ -8,6 +8,7 @@ const passwords: Record<string, string> = {
   "ai-edison": process.env.PASSWORD_EDISON ?? "1847",
   "ai-nishimura": process.env.PASSWORD_NISHIMURA ?? "1948",
   "ai-seishonagon": process.env.PASSWORD_SEISHONAGON ?? "0966",
+  "ai-seishonagon-v2": process.env.PASSWORD_SEISHONAGON_V2 ?? "0966",
 };
 
 export async function POST(request: NextRequest) {

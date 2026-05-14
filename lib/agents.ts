@@ -82,4 +82,16 @@ export const agents: Agent[] = [
     imageGradient: "linear-gradient(135deg, #be185d 0%, #ec4899 50%, #f9a8d4 100%)",
     imageAspect: "medium",
   },
+  {
+    id: "ai-seishonagon-v2",
+    name: "AI清少納言ver2",
+    description:
+      "清少納言ver2。平安時代の才女・清少納言のAI第2版。より洗練された対話で『枕草子』の世界を体験できる。",
+    persona: "AI Legend",
+    originalPerson: "清少納言",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_2801krjg0vj9ess90bz9rz0zk5qv&branch_id=agtbrch_4601krjg0xhffbcrrm97kk481qm2",
+    tags: ["文学", "平安時代", "歴史"],
+    imageGradient: "linear-gradient(135deg, #9d174d 0%, #db2777 50%, #f472b6 100%)",
+    imageAspect: "medium",
+  },
 ];
