@@ -3,9 +3,9 @@
 import { Agent } from "@/lib/agents";
 
 const personaBadgeStyles: Record<Agent["persona"], string> = {
-  "AI Clone": "bg-purple-500/20 text-purple-300 border-purple-500/30",
-  "Real Person": "bg-blue-500/20 text-blue-300 border-blue-500/30",
-  "AI Legend": "bg-amber-500/20 text-amber-300 border-amber-500/30",
+  "AI Clone": "bg-white/[0.08] text-purple-300/70",
+  "Real Person": "bg-white/[0.08] text-blue-300/70",
+  "AI Legend": "bg-white/[0.08] text-amber-300/70",
 };
 
 const aspectHeights: Record<Agent["imageAspect"], string> = {
@@ -30,51 +30,44 @@ export default function AgentCard({ agent, unlocked, onTalk }: Props) {
   };
 
   return (
-    <div className="group relative break-inside-avoid mb-6 rounded-2xl border border-white/10 bg-[#1e1e2e] overflow-hidden transition-all duration-300 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(124,58,237,0.15)]">
+    <div
+      className="group relative break-inside-avoid mb-8 rounded-lg border border-white/[0.06] bg-[#161616] overflow-hidden transition-colors duration-300 hover:border-white/[0.15] cursor-pointer"
+      onClick={handleClick}
+    >
       {/* Image area with gradient */}
       <div className={`relative ${aspectHeights[agent.imageAspect]} overflow-hidden`}>
         <div
-          className="absolute inset-0 transition-transform duration-500 group-hover:scale-105"
+          className="absolute inset-0"
           style={{ background: agent.imageGradient }}
         />
 
         {/* Persona badge - top left */}
         <span
-          className={`absolute top-3 left-3 z-10 rounded-full border px-3 py-1 text-xs font-medium backdrop-blur-sm ${personaBadgeStyles[agent.persona]}`}
+          className={`absolute top-3 left-3 z-10 rounded-full px-3 py-1 text-[11px] font-medium tracking-wide ${personaBadgeStyles[agent.persona]}`}
         >
           {agent.persona}
         </span>
 
         {/* Unlocked indicator - top right */}
         {unlocked && (
-          <span className="absolute top-3 right-3 z-10 rounded-full bg-green-500/20 px-3 py-1 text-xs font-medium text-green-400 backdrop-blur-sm border border-green-500/30">
+          <span className="absolute top-3 right-3 z-10 text-[11px] font-medium text-white/40 tracking-wide">
             Unlocked
           </span>
         )}
-
-        {/* Hover overlay with action button */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-300 group-hover:bg-black/40 group-hover:opacity-100">
-          <button
-            onClick={handleClick}
-            className="cursor-pointer rounded-full bg-white/90 px-6 py-2.5 text-sm font-semibold text-gray-900 shadow-lg transition-transform duration-200 hover:scale-105"
-          >
-            {unlocked ? "Open" : "Talk"}
-          </button>
-        </div>
       </div>
 
       {/* Content area */}
       <div className="p-5">
-        <h3 className="mb-2 text-lg font-bold text-[#e2e8f0]">{agent.name}</h3>
-        <p className="mb-4 text-sm leading-relaxed text-[#94a3b8]">
+        <h3 className="mb-2 text-base font-semibold text-[#e8e6e3]">{agent.name}</h3>
+        <p className="mb-4 text-sm leading-relaxed text-[#888888]">
           {agent.description}
         </p>
 
-        <div className="mb-4 flex flex-wrap gap-2">
+        <div className="mb-4 flex flex-wrap gap-1.5">
           {agent.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-md bg-white/5 px-2 py-1 text-xs text-[#94a3b8]"
+              className="rounded-full bg-white/[0.04] px-2.5 py-0.5 text-[11px] text-[#666666]"
             >
               {tag}
             </span>
@@ -82,8 +75,7 @@ export default function AgentCard({ agent, unlocked, onTalk }: Props) {
         </div>
 
         <button
-          onClick={handleClick}
-          className="w-full cursor-pointer rounded-lg bg-gradient-to-r from-[#7c3aed] to-[#3b82f6] px-4 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+          className="w-full cursor-pointer rounded-md border border-white/[0.1] px-4 py-2 text-sm text-[#888888] transition-colors duration-200 hover:border-white/[0.2] hover:text-[#e8e6e3]"
         >
           {unlocked ? `Open ${agent.name}` : `Talk to ${agent.name}`}
         </button>

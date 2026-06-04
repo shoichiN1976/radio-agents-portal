@@ -47,18 +47,6 @@ export const agents: Agent[] = [
     imageAspect: "medium",
   },
   {
-    id: "ai-edison",
-    name: "AIエジソン",
-    description:
-      "発明王トーマス・エジソンのAI。電球、蓄音機、映画など数々の発明を生み出した天才発明家。",
-    persona: "AI Legend",
-    originalPerson: "トーマス・エジソン",
-    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_4801km9v0znqenbrw8r22bg4fmg4&branch_id=agtbrch_9901km9v1204ffwtq5j1kk7xm4qj",
-    tags: ["発明家", "テクノロジー", "歴史"],
-    imageGradient: "linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%)",
-    imageAspect: "medium",
-  },
-  {
     id: "ai-nishimura",
     name: "AI西村光久",
     description:
@@ -69,6 +57,18 @@ export const agents: Agent[] = [
     tags: ["AIクローン"],
     imageGradient: "linear-gradient(135deg, #0891b2 0%, #06b6d4 50%, #22d3ee 100%)",
     imageAspect: "tall",
+  },
+  {
+    id: "ai-edison",
+    name: "AIエジソン",
+    description:
+      "発明王トーマス・エジソンのAI。電球、蓄音機、映画など数々の発明を生み出した天才発明家。",
+    persona: "AI Legend",
+    originalPerson: "トーマス・エジソン",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_4801km9v0znqenbrw8r22bg4fmg4&branch_id=agtbrch_9901km9v1204ffwtq5j1kk7xm4qj",
+    tags: ["発明家", "テクノロジー", "歴史"],
+    imageGradient: "linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%)",
+    imageAspect: "medium",
   },
   {
     id: "ai-seishonagon",
@@ -83,18 +83,6 @@ export const agents: Agent[] = [
     imageAspect: "medium",
   },
   {
-    id: "ai-natsume-soseki",
-    name: "AI夏目漱石",
-    description:
-      "近代日本文学の巨匠・夏目漱石のAI。『吾輩は猫である』『坊っちゃん』『こころ』など数々の名作を生み出した文豪。",
-    persona: "AI Legend",
-    originalPerson: "夏目漱石",
-    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_4801kssjp7vzeb6vzttcmf5cysbj&branch_id=agtbrch_4501kssjp9kvfxkveyqwad5gr1es",
-    tags: ["文豪", "小説", "明治・大正"],
-    imageGradient: "linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #7dd3fc 100%)",
-    imageAspect: "medium",
-  },
-  {
     id: "ai-seishonagon-v2",
     name: "AI清少納言ver2",
     description:
@@ -104,6 +92,18 @@ export const agents: Agent[] = [
     url: "https://elevenlabs.io/app/talk-to?agent_id=agent_2801krjg0vj9ess90bz9rz0zk5qv&branch_id=agtbrch_4601krjg0xhffbcrrm97kk481qm2",
     tags: ["文学", "平安時代", "歴史"],
     imageGradient: "linear-gradient(135deg, #9d174d 0%, #db2777 50%, #f472b6 100%)",
+    imageAspect: "medium",
+  },
+  {
+    id: "ai-natsume-soseki",
+    name: "AI夏目漱石",
+    description:
+      "近代日本文学の巨匠・夏目漱石のAI。『吾輩は猫である』『坊っちゃん』『こころ』など数々の名作を生み出した文豪。",
+    persona: "AI Legend",
+    originalPerson: "夏目漱石",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_4801kssjp7vzeb6vzttcmf5cysbj&branch_id=agtbrch_4501kssjp9kvfxkveyqwad5gr1es",
+    tags: ["文豪", "小説", "明治・大正"],
+    imageGradient: "linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #7dd3fc 100%)",
     imageAspect: "medium",
   },
 ];

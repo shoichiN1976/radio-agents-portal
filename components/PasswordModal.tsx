@@ -53,13 +53,13 @@ export default function PasswordModal({ agent, onSuccess, onClose }: Props) {
       onClick={onClose}
     >
       <div
-        className="w-full max-w-md rounded-2xl border border-purple-500/20 bg-[#1e1e2e] p-8 shadow-[0_0_60px_rgba(124,58,237,0.2)]"
+        className="w-full max-w-md rounded-lg border border-white/[0.1] bg-[#161616] p-8 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="mb-1 text-xl font-bold text-[#e2e8f0]">
+        <h2 className="mb-1 text-lg font-semibold text-[#e8e6e3]">
           {agent.name}
         </h2>
-        <p className="mb-6 text-sm text-[#94a3b8]">
+        <p className="mb-6 text-sm text-[#888888]">
           パスワードを入力してください
         </p>
 
@@ -70,17 +70,17 @@ export default function PasswordModal({ agent, onSuccess, onClose }: Props) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
-            className="mb-4 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-[#e2e8f0] placeholder-[#94a3b8]/50 outline-none transition-colors focus:border-purple-500/50"
+            className="mb-4 w-full rounded-md border border-white/[0.1] bg-white/[0.04] px-4 py-3 text-[#e8e6e3] placeholder-white/20 outline-none transition-colors focus:border-white/[0.2]"
           />
 
           {error && (
-            <p className="mb-4 text-sm text-red-400">{error}</p>
+            <p className="mb-4 text-sm text-red-400/80">{error}</p>
           )}
 
           <button
             type="submit"
             disabled={loading || !password}
-            className="mb-3 w-full cursor-pointer rounded-lg bg-gradient-to-r from-[#7c3aed] to-[#3b82f6] px-4 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+            className="mb-3 w-full cursor-pointer rounded-md bg-white/[0.9] px-4 py-3 text-sm font-semibold text-[#0f0f0f] transition-opacity hover:bg-white disabled:cursor-not-allowed disabled:opacity-40"
           >
             {loading ? "Verifying..." : "Enter"}
           </button>
@@ -88,7 +88,7 @@ export default function PasswordModal({ agent, onSuccess, onClose }: Props) {
           <button
             type="button"
             onClick={onClose}
-            className="w-full cursor-pointer text-sm text-[#94a3b8] transition-colors hover:text-[#e2e8f0]"
+            className="w-full cursor-pointer text-sm text-[#666666] transition-colors hover:text-[#e8e6e3]"
           >
             Cancel
           </button>
