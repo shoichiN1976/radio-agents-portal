@@ -83,6 +83,18 @@ export const agents: Agent[] = [
     imageAspect: "medium",
   },
   {
+    id: "ai-natsume-soseki",
+    name: "AI夏目漱石",
+    description:
+      "近代日本文学の巨匠・夏目漱石のAI。『吾輩は猫である』『坊っちゃん』『こころ』など数々の名作を生み出した文豪。",
+    persona: "AI Legend",
+    originalPerson: "夏目漱石",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_4801kssjp7vzeb6vzttcmf5cysbj&branch_id=agtbrch_4501kssjp9kvfxkveyqwad5gr1es",
+    tags: ["文豪", "小説", "明治・大正"],
+    imageGradient: "linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #7dd3fc 100%)",
+    imageAspect: "medium",
+  },
+  {
     id: "ai-seishonagon-v2",
     name: "AI清少納言ver2",
     description:

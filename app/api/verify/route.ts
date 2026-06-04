@@ -7,6 +7,7 @@ const passwords: Record<string, string> = {
   "shiga-naoya": process.env.PASSWORD_SHIGA ?? "1915",
   "ai-edison": process.env.PASSWORD_EDISON ?? "1847",
   "ai-nishimura": process.env.PASSWORD_NISHIMURA ?? "1948",
+  "ai-natsume-soseki": process.env.PASSWORD_NATSUME ?? "1867",
   "ai-seishonagon": process.env.PASSWORD_SEISHONAGON ?? "0966",
   "ai-seishonagon-v2": process.env.PASSWORD_SEISHONAGON_V2 ?? "0966",
 };
