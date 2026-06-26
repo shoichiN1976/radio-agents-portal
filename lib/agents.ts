@@ -94,4 +94,16 @@ export const agents: Agent[] = [
     imageGradient: "linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #7dd3fc 100%)",
     imageAspect: "medium",
   },
+  {
+    id: "ai-oda-nobunaga",
+    name: "AI織田信長",
+    description:
+      "戦国の覇王・織田信長のAI。天下統一を目指し革新的な戦略と大胆な改革で時代を変えた戦国武将。",
+    persona: "AI Legend",
+    originalPerson: "織田信長",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_3101kw10rjmdfa5b7tj4p87bh6rq&branch_id=agtbrch_1401kw10rmbken2882weg3k5paqa",
+    tags: ["戦国武将", "歴史", "リーダーシップ"],
+    imageGradient: "linear-gradient(135deg, #991b1b 0%, #dc2626 50%, #f87171 100%)",
+    imageAspect: "medium",
+  },
 ];
