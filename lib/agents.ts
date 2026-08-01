@@ -106,4 +106,16 @@ export const agents: Agent[] = [
     imageGradient: "linear-gradient(135deg, #991b1b 0%, #dc2626 50%, #f87171 100%)",
     imageAspect: "medium",
   },
+  {
+    id: "ai-beethoven",
+    name: "AIベートーヴェン",
+    description:
+      "楽聖ルートヴィヒ・ヴァン・ベートーヴェンのAI。『運命』『第九』を生み、誰にも仕えず自らの足で立った作曲家。",
+    persona: "AI Legend",
+    originalPerson: "ルートヴィヒ・ヴァン・ベートーヴェン",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_2401kyvv6pp5ef4r26hkvwthavrj&branch_id=agtbrch_6701kyvv6reyf2h985745bszmbky",
+    tags: ["作曲家", "音楽", "古典派・ロマン派"],
+    imageGradient: "linear-gradient(135deg, #3730a3 0%, #4f46e5 50%, #818cf8 100%)",
+    imageAspect: "tall",
+  },
 ];
