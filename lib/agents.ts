@@ -118,4 +118,16 @@ export const agents: Agent[] = [
     imageGradient: "linear-gradient(135deg, #3730a3 0%, #4f46e5 50%, #818cf8 100%)",
     imageAspect: "tall",
   },
+  {
+    id: "ai-kobayashi-hideo",
+    name: "AI小林秀雄",
+    description:
+      "批評家・小林秀雄のAI。近代日本の批評を一人で確立し、モオツァルト、ゴッホ、本居宣長を論じた。物をじかに見ることを説いた人。",
+    persona: "AI Legend",
+    originalPerson: "小林秀雄",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_0901kyxbkq0hf3085ph7yjg8jjwt&branch_id=agtbrch_7501kyxbkqjpe9ksa1cbd1718njd",
+    tags: ["批評家", "文学", "昭和"],
+    imageGradient: "linear-gradient(135deg, #292524 0%, #57534e 50%, #b8a06a 100%)",
+    imageAspect: "medium",
+  },
 ];
