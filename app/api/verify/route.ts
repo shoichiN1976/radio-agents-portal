@@ -13,6 +13,7 @@ const passwords: Record<string, string> = {
   "ai-oda-nobunaga": process.env.PASSWORD_NOBUNAGA ?? "1534",
   "ai-beethoven": process.env.PASSWORD_BEETHOVEN ?? "1770",
   "ai-kobayashi-hideo": process.env.PASSWORD_KOBAYASHI ?? "1902",
+  "ai-socrates": process.env.PASSWORD_SOCRATES ?? "0469",
 };
 
 export async function POST(request: NextRequest) {

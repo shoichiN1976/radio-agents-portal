@@ -130,4 +130,16 @@ export const agents: Agent[] = [
     imageGradient: "linear-gradient(135deg, #292524 0%, #57534e 50%, #b8a06a 100%)",
     imageAspect: "medium",
   },
+  {
+    id: "ai-socrates",
+    name: "AIソクラテス",
+    description:
+      "哲学者ソクラテスのAI。一行も書き残さず、裸足で市場に立って人をつかまえては問い続けた。答えではなく、問いを返す声。",
+    persona: "AI Legend",
+    originalPerson: "ソクラテス",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_7001m1jcqctffbdsbtezyghc74f1&branch_id=agtbrch_2601m1jcqebae7tt40c16tpn11h2",
+    tags: ["哲学者", "問答", "古代ギリシャ"],
+    imageGradient: "linear-gradient(135deg, #7c3a22 0%, #a65437 50%, #d9a574 100%)",
+    imageAspect: "short",
+  },
 ];
