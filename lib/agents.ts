@@ -142,4 +142,16 @@ export const agents: Agent[] = [
     imageGradient: "linear-gradient(135deg, #7c3a22 0%, #a65437 50%, #d9a574 100%)",
     imageAspect: "short",
   },
+  {
+    id: "ai-nobel",
+    name: "AIノーベル",
+    description:
+      "ダイナマイトの発明者アルフレッド・ノーベルのAI。手に負えないものを扱える形に包んだ男が、財産を賞に変えて130年。物静かで乾いたユーモアの声。",
+    persona: "AI Legend",
+    originalPerson: "アルフレッド・ノーベル",
+    url: "https://elevenlabs.io/app/talk-to?agent_id=agent_9301m3rp390vef5afsptytr96qgv&branch_id=agtbrch_7201m3rp3bcze6pabcpf5jnx2hbx",
+    tags: ["発明家", "ノーベル賞", "スウェーデン"],
+    imageGradient: "linear-gradient(135deg, #14213d 0%, #3d4f6b 50%, #c9a44c 100%)",
+    imageAspect: "tall",
+  },
 ];
